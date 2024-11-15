@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Marcello</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="{{ url_for('static', filename='imagem.jpg') }}" alt="Foto de Marcello" class="profile-image">
+            <div class="name-title">
+                <h1>Marcello Bellotti Fargnolli</h1>
+                <p>Desenvolvedor</p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/marcellobellotti/" target="_blank">LinkedIn</a>
+                    <a href="mailto:marcellofargnolli@gmail.com">E-mail</a>
+                    <a href="https://github.com/MarcelloBF" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="sections-container">
+        <div class="section" id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Estudante de Ciência da Computação com 21 anos, com grande interesse em aprender novas tecnologias e soluções inovadoras. 
+                Tenho uma abordagem colaborativa, e gosto de trabalhar em equipe para atingir objetivos comuns e resolver problemas de maneira criativa e eficiente.
+            </p>
+        </div>
+
+        <div class="section" id="experiencia">
+            <h2>Experiência</h2>
+            <ul>
+                <li>Estagiário de operção Yakows (2023 - 2023)</li>
+            </ul>
+        </div>
+
+        <div class="section" id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML, CSS</li>
+                <li>Python</li>
+                <li>Git</li>
+            </ul>
+        </div>
+
+        <div class="section" id="idiomas">
+            <h2>Idiomas</h2>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%;">Inglês - 40%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 35%;">Espanhol - 35%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nova seção de Cursos -->
+        <div class="section" id="cursos">
+            <h2>Cursos</h2>
+            <ul>
+                <li>Cursando Desenvolvimento Python - <span class="course-duration">2023</span></li>
+                <li>Cursando Ciencia da Computação USJT - <span class="course-duration">2022-2026</span></li>
+                <li>Basico e intermediario de HTML e CSS RocketSeat - <span class="course-duration">2022</span></li>
+            </ul>
+        </div>
+
+        <div class="section projects" id="projetos">
+            <h2>Projetos</h2>
+            <ul>
+                <li><a href="" target="_blank">Projetos</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Marcello Bellotti Fargnolli. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

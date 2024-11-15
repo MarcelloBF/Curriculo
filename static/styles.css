@@ -1,0 +1,184 @@
+/* Configuração básica do layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Fundo cinza claro */
+    color: #343a40;           /* Texto cinza escuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #343a40;  /* Fundo cinza escuro */
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os elementos */
+}
+
+/* Logo */
+.logo {
+    width: 80px; /* Tamanho da logo */
+    height: auto; /* Mantém a proporção */
+    margin-right: 20px; /* Espaço entre a logo e os outros elementos */
+    border-radius: 10px; /* Opcional: arredondar os cantos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a logo */
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.name-title h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.name-title p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.contact-links {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.contact-links a {
+    color: #ffffff; /* Amarelo */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+.sections-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #000; /* Borda preta fina */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra moderna */
+    width: calc(33% - 20px); /* Responsivo */
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-10px); /* Efeito de elevação */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #343a40;
+}
+
+p, ul {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    list-style: disc;
+    margin-bottom: 5px;
+}
+
+/* Barra de progresso */
+.progress-container {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px; /* Tamanho máximo da barra */
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0; /* Cor de fundo da barra */
+    border-radius: 8px;
+    height: 25px;
+    margin: 10px 0;
+    border: 2px solid #ddd; /* Borda leve ao redor da barra */
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 25px; /* Alinha o texto verticalmente */
+    color: white;
+    font-weight: bold;
+    transition: width 0.3s ease;
+}
+
+/* Cores das barras de progresso */
+.progress:nth-child(1) {
+    background-color: #007bff; /* Azul para inglês */
+}
+
+.progress:nth-child(2) {
+    background-color: #28a745; /* Verde para espanhol */
+}
+
+/* Seção de Cursos */
+#cursos ul {
+    padding-left: 20px;
+}
+
+#cursos ul li {
+    list-style: none;
+    background-color: #f1f1f1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 5px solid #007bff;
+}
+
+#cursos .course-duration {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+footer {
+    text-align: center;
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
